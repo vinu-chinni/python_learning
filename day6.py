@@ -20,7 +20,8 @@ print(s)
 s.add('vinutna')
 s.add(range(1,4))
 s.add((1,2,3))
-s.add((5,6,7))
+# s.add({1,2,3})
+# s.add({1:2,5:4})
 #s.add([4,5,6]) # error because it is list ,it means it is mutable
 
 
@@ -35,8 +36,9 @@ s.add((5,6,7))
 s.update('vinutna')
 s.update(range(1,4))
 s.update((1,2,3))
-s.update((5,6,7))
-
+s.update([5,6,7])
+s.update({1,2,3})
+s.update({1:2,5:4})
 
 #print a set and remove first element from that set
 s={3,4,2,5,6,1}
@@ -63,6 +65,8 @@ print(s)
 #create a set {1,2,3,4}, a list [3,4,5,6].
 s={1,2,3,4}
 l=[3,4,5,6]
+print(s)
+print(l)
 #write union of set and list
 print(s.union(l))         #{1,2,3,4,5,6}
 #write intersection of set and list
@@ -74,10 +78,10 @@ print(s.symmetric_difference(l))
 #use union, intersection, difference, symmetric difference operators on set and another set. try to change second type of list and see outputs
 s1 = {1, 2, 3, 4}
 s2 = {3, 4, 5, 6}
-print("Union:", s1 | s2)
-print("Intersection:", s1 & s2)
-print("Difference:", s1 - s2)
-print("Symmetric Difference:", s1 ^ s2)
+print(s1 | s2)
+print(s1 & s2)
+print(s1 - s2)
+print(s1 ^ s2)
 
 l=[3,4,5,6]
 # print(s1 | l)     
@@ -91,19 +95,19 @@ d={}
 print(d)
 
 #extend dict with another dict
-d = {1: 'a', 2: 'b'}
-d.update({3: 'c', 4: 'd'})
+
+d.update({1: 'a', 2: 'b'})
 print(d)
 
 
 #extend dict with another list
-d = {1: 'a', 2: 'b'}
-d.update([(3, 'c'), (4, 'd')])
+
+d.update([[4,'c'],[5,'d'],[6,'e']])
 print(d)
 
 #extend dict with another tuple
 d = {1: 'a', 2: 'b'}
-d.update(((3, 'c'), (4, 'd')))
+d.update(((3, 'f'), (4, 'g')))
 print(d)
 
 #extend dict with another set--- set does not have key values
@@ -124,7 +128,7 @@ print(d.pop(4))
 print(d.pop(100,'z'))
 
 #remove the last pair
-#print(d.pop(4))
+#print(d.popitem())
 
 #remove all elements from the dict
 d.clear()
@@ -143,10 +147,13 @@ print(d.get(100,'z'))
 
 #get the value of key 4 with setdefault
 print(d.setdefault(4))
+print(d)
 #get the value of key 100 with setdefault
 print(d.setdefault(100))
+print(d)
 #get the value of key 100 with setdefault, if key is not there add 100 with 'z'
 print(d.setdefault(100,'z'))
+print(d)
 #get all keys of dict and print its type
 print(d.keys())
 print(type(d))
