@@ -116,10 +116,10 @@ print(a.count(1)) # 3
 print(a.count(2))# 2
 
 # find index of 1 from start
-print(a.index(1)) 
+print(a.index(1)) #0
 
 # find index of 1 from 2nd index
-print(a.index(1, 2))
+print(a.index(1, 2))  #2
 
 # find index of 1 from 5th index
 #print(a.index(1, 5)) # error

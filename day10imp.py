@@ -65,7 +65,10 @@ for x in range(10,26):
     sum+=x
 print("sum of numbers from 10 to 25 is: ",sum)
 print( )
-
+sum=0
+for x in list:
+    sum+=x
+print("sum of numbers from the given list: ",sum)
 #7. multiplication table of a number
 n=int(input("Enter a number for multiplicatin:"))
 for i in range(1,21):
@@ -92,6 +95,10 @@ print( )
 print( )
 
 #10. reverse a string
+s="
+rev=" " 
+for x in range(len(string))
+
 
 
 
@@ -101,7 +108,7 @@ s = input("Enter a string: ")
 count = 0
 
 for i in s:
-    if i in "aeiou":
+    if i in "aeiouAEIOU":
         count += 1
 
 print("Vowels:", count)
@@ -110,9 +117,12 @@ print( )
 
 #12. count z's and y's in a string
 s = input("Enter a string: ")
+count=0
+for i in s:
+    if i in"zZYy":
+        count+=1
+print("total  z\'s and y\'s in a string :", count)
 
-print("z:", s.count("z"))
-print("y:", s.count("y"))
 print( )
 print( )
 

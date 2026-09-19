@@ -4,3 +4,6 @@ stu_marks=15
 print("name:",stu_name)
 print("age:",stu_age)
 print("marks:",stu_marks)
+
+
+#2stu_name:amar is invalid because variable cannot start with number.
